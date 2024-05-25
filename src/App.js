@@ -4,6 +4,10 @@ function App() {
   return (
     <div className={styles.app}>
       <p>Hello!</p>
+      <Home />
+      <Shop />
+      <About />
+      <Checkout />
     </div>
   );
 }
