@@ -2,7 +2,14 @@ import React from 'react'
 
 const home = () => {
   return (
-    <div>home</div>
+    <div>
+      <navbar />
+      <hero />
+      <featured />
+      <items />
+      <special />
+      <footer />
+    </div>
   )
 }
 
