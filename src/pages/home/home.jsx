@@ -7,7 +7,7 @@ import { Hero } from '.../components/hero/Hero';
 import { Items } from '.../components/items/Items';
 import { Special } from '.../components/special/Special';
 
-const home = () => {
+const Home = () => {
   return (
     <div>
       <Navbar />
@@ -20,4 +20,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home
