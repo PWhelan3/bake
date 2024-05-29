@@ -1,10 +1,12 @@
+import React from 'react';
+import {Items} from '.../components/items/Items';
 
-import React from 'react'
-
-const shop = () => {
+const Shop = () => {
   return (
-    <div>shop</div>
+    <div>
+      <Items />
+    </div>
   )
 }
 
-export default shop
+export default Shop
