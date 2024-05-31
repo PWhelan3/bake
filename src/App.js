@@ -9,7 +9,7 @@ import { NoPage } from "./pages/nopage/NoPage";
 
 function App() {
   return (
-    <div className={styles.app}>
+    <div className={styles.App}>
       <p>Hello!</p>
       <BrowserRouter>
         <Routes>
