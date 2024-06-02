@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { AiOutlineShopping } from "react-icons/ai";
+
 
 const Navbar = () => {
   return (
