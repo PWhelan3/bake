@@ -13,7 +13,13 @@ const Cart = ({
   onQuantityChange,
 }) => {
   return (
-    <div>Cart</div>
+    <div className={styles.modal}>
+      <div className={styles.header}>
+        <h2>Shopping Cart</h2>
+        <button className={`${styles.btn} ${styles.close-btn}`}></button>
+      </div>
+    </div>
+
   )
 }
 
