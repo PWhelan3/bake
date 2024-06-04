@@ -5,7 +5,13 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 
 
 
-const Cart = () => {
+const Cart = ({
+  visibility,
+  products,
+  onProductRemove,
+  onClose,
+  onQuantityChange,
+}) => {
   return (
     <div>Cart</div>
   )
