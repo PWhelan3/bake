@@ -16,7 +16,9 @@ const Cart = ({
     <div className={styles.modal}>
       <div className={styles.header}>
         <h2>Shopping Cart</h2>
-        <button className={`${styles.btn} ${styles.close-btn}`}></button>
+        <button className={`${styles.btn} ${styles.close-btn}`} onClick={onClose}>
+          <AiFillCloseCircle size={30} />
+        </button>
       </div>
     </div>
 
