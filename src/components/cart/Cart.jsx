@@ -20,7 +20,10 @@ const Cart = ({
           <AiFillCloseCircle size={30} />
         </button>
         <div className={styles.cart-products}>
-          {products.length === 0 && <span className={styles.empty-text}></span>}
+          {products.length === 0 && (<span className={styles.empty-text}>
+            Your cart is currently empty
+            </span>)}
+            
         </div>
       </div>
     </div>
