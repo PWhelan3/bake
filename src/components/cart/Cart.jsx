@@ -19,6 +19,9 @@ const Cart = ({
         <button className={`${styles.btn} ${styles.close-btn}`} onClick={onClose}>
           <AiFillCloseCircle size={30} />
         </button>
+        <div className={styles.cart-products}>
+          {products.length === 0 && <span className={styles.empty-text}></span>}
+        </div>
       </div>
     </div>
 
