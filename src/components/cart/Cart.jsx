@@ -34,6 +34,9 @@ const Cart = ({
                   <h3>
                     {product.name}
                   </h3>
+                  <span className={styles.product-price}>
+                    {product.price * product.count}
+                  </span>
                 </div>
               </div>
             ))}
