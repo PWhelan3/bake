@@ -35,9 +35,12 @@ const Cart = ({
                     {product.name}
                   </h3>
                   <span className={styles.product-price}>
-                    {product.price * product.count}
+                    {product.price * product.count}$
                   </span>
                 </div>
+                <select className={styles.count} value={product.count} onChange={(event) => {
+                  onQuantityChange(product.id, event.target.value);
+                }}></select>
               </div>
             ))}
         </div>
