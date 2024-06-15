@@ -40,7 +40,14 @@ const Cart = ({
                 </div>
                 <select className={styles.count} value={product.count} onChange={(event) => {
                   onQuantityChange(product.id, event.target.value);
-                }}></select>
+                }}>
+                  {
+                    [...Array(10).keys()].map(number => {
+                      const num = number + 1;
+                      return <option value={num} key={num}></option>
+                    })
+                  }
+                </select>
               </div>
             ))}
         </div>
