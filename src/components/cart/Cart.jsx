@@ -44,10 +44,11 @@ const Cart = ({
                   {
                     [...Array(10).keys()].map(number => {
                       const num = number + 1;
-                      return <option value={num} key={num}></option>
+                      return <option value={num} key={num}>{num}</option>
                     })
                   }
                 </select>
+                <button className={`${styles.btn} ${styles.remove-btn}`} onClick={() => onProductRemove(product)}></button>
               </div>
             ))}
         </div>
