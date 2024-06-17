@@ -48,9 +48,12 @@ const Cart = ({
                     })
                   }
                 </select>
-                <button className={`${styles.btn} ${styles.remove-btn}`} onClick={() => onProductRemove(product)}></button>
+                <button className={`${styles.btn} ${styles.remove-btn}`} onClick={() => onProductRemove(product)}>
+                  <RiDeleteBin6Line size={20}/>
+                </button>
               </div>
             ))}
+            {products.length > 0 && <button className={`${styles.btn} ${styles.checkout-btn}`}>Proceed to checkout</button>}
         </div>
     </div>
 
