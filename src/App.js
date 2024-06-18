@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import styles from './app.module.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from "./pages/layout/Layout";
@@ -8,6 +9,8 @@ import { Checkout } from "./pages/checkout/Checkout";
 import { NoPage } from "./pages/nopage/NoPage";
 
 function App() {
+  const [catrsVisibility, setCartVisible] = useState(false);
+  const [productsInCart, setProducts] = useState([]);
   return (
     <div className={styles.App}>
       <p>Hello!</p>
