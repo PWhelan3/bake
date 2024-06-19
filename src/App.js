@@ -9,10 +9,18 @@ import { Checkout } from "./pages/checkout/Checkout";
 import { NoPage } from "./pages/nopage/NoPage";
 
 function App() {
-  const [catrsVisibility, setCartVisible] = useState(false);
+  const [cartsVisibility, setCartVisible] = useState(false);
   const [productsInCart, setProducts] = useState([]);
   return (
     <div className={styles.App}>
+      <ShoppingCart visibility={cartsVisibility} products={productsInCart}/>
+      <div className={styles.navbar}>
+        <h3 className={styles.logo}>Logo</h3>
+        <button className={`${styles.btn} ${styles.shopping-cart-btn}`}>
+          <GiShoppingBag size={24}/>
+        </button>
+      </div>
+      <main>
       <p>Hello!</p>
       <BrowserRouter>
         <Routes>
@@ -25,6 +33,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      </main>
     </div>
   );
 }
