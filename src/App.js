@@ -16,7 +16,7 @@ function App() {
       <ShoppingCart visibility={cartsVisibility} products={productsInCart}/>
       <div className={styles.navbar}>
         <h3 className={styles.logo}>Logo</h3>
-        <button className={`${styles.btn} ${styles.shopping-cart-btn}`}>
+        <button className={`${styles.btn} ${styles.shopping-cart-btn}`} onClick={() => setCartVisible(true)}>
           <GiShoppingBag size={24}/>
         </button>
       </div>
