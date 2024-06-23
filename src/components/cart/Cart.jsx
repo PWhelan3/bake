@@ -11,53 +11,36 @@ function ShoppingCart({
 	onQuantityChange,
 }) {
 	return (
-		<div
-			className={styles.modal}
-			style={{
-				display: visibilty
-					? "block"
-					: "none",
-			}}>
+		<div className={styles.modal} style={{display: visibilty ? "block" : "none", }}>
 			<div className={styles.shoppingCart}>
 				<div className={styles.header}>
 					<h2>Shopping cart</h2>
-					<button
-						className={`${styles.btn} ${styles.close-btn}`}
-						onClick={onClose}>
-						<AiFillCloseCircle
-							size={30}
-						/>
+					<button className={`${styles.btn} ${styles.close-btn}`} onClick={onClose}>
+						<AiFillCloseCircle size={30}/>
 					</button>
 				</div>
-				<div className="cart-products">
+				<div className={styles.cart-products}>
 					{products.length === 0 && (
-						<span className="empty-text">
+						<span className={styles.empty-text}>
 							Your basket is
 							currently empty
 						</span>
 					)}
 					{products.map((product) => (
-						<div
-							className="cart-product"
-							key={product.id}>
-							<img
-								src={
-									product.image
-								}
-								alt={product.name}
-							/>
-							<div className="product-info">
+						<div className={styles.cart-product} key={product.id}>
+							<img src={product.image} alt={product.name}/>
+							<div className={styles.product-info}>
 								<h3>
 									{product.name}
 								</h3>
-								<span className="product-price">
+								<span className={styles.product-price}>
 									{product.price *
 										product.count}
 									$
 								</span>
 							</div>
 							<select
-								className="count"
+								className={styles.count}
 								value={
 									product.count
 								}
