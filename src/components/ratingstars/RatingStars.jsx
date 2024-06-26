@@ -1,8 +1,6 @@
 import React from "react";
-import {
-	BsStar,
-	BsStarFill,
-} from "react-icons/bs";
+import {BsStar, BsStarFill} from "react-icons/bs";
+import styles from "./RatingStars.module.css";
 
 function RatingStars({ rating }) {
 	const filledStars = Math.floor(rating);
@@ -25,15 +23,15 @@ function RatingStars({ rating }) {
 	};
 
 	return (
-		<div className="rating">
+		<div className={styles.rating}>
 			{Array(5)
 				.fill(0)
 				.map((star, index) => (
 					<div
-						className="star"
+						className={styles.star}
 						key={index}>
 						<div
-							className="starFull"
+							className={styles.starFull}
 							style={{
 								width: starFilledWidth(
 									index
@@ -41,7 +39,7 @@ function RatingStars({ rating }) {
 							}}>
 							<BsStarFill />
 						</div>
-						<div className="starEmpty">
+						<div className={styles.starEmpty}>
 							<BsStar />
 						</div>
 					</div>
