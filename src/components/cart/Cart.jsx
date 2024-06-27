@@ -41,8 +41,8 @@ function ShoppingCart({
 										const num = number + 1;
 										return (
 							        <option value={num} key={num}>
-												{num}
-											</option>
+										{num}
+									</option>
 										);
 									}
 								)}

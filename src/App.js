@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './app.module.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { GiShoppingBag } from "react-icons/gi";
+import RatingStars from "./components/ratingstars/RatingStars";
+import ShoppingCart from "./components/cart/Cart";
 import { Layout } from "./pages/layout/Layout";
 import { Home } from "./pages/home/Home";
 import { Shop } from "./pages/shop/Shop";
