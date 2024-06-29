@@ -117,30 +117,14 @@ function App() {
 				</h2>
 				<div className="products">
 					{products.map((product) => (
-						<div
-							className="product"
-							key={product.id}>
-							<img
-								className="product-image"
-								src={
-									product.image
-								}
-								alt={
-									product.image
-								}
-							/>
+						<div className="product" key={product.id}>
+							<img className="product-image" src={ product.image } alt={ product.image } />
 							<h4 className="product-name">
 								{product.name}
 							</h4>
-							<RatingStars
-								rating={
-									product.rating
-								}
-							/>
+							<RatingStars rating={ product.rating } />
 							<p>
-								{
-									product.description
-								}
+								{ product.description}
 							</p>
 							<span className="product-price">
 								{product.price}$
@@ -149,13 +133,7 @@ function App() {
 								<button className="btn">
 									Detail
 								</button>
-								<button
-									className="btn"
-									onClick={() =>
-										addProductToCart(
-											product
-										)
-									}>
+								<button className="btn" onClick={() => addProductToCart( product ) }>
 									Add to cart
 								</button>
 							</div>
