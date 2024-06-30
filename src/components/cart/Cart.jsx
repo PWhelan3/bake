@@ -47,9 +47,7 @@ function ShoppingCart({
 									}
 								)}
 							</select>
-							<button
-								className={`${styles.btn} ${styles.remove-btn}`}
-								onClick={() => onProductRemove(product)}>
+							<button className={`${styles.btn} ${styles.remove-btn}`} onClick={() => onProductRemove(product)}>
 								<RiDeleteBin6Line size={20}/>
 							</button>
 						</div>
