@@ -51,6 +51,17 @@ function App() {
     <div className={styles.App}>
       <ShoppingCart visibility={cartsVisibility} products={productsInCart}/>
       <div className={styles.navbar}>
+	  <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="shop" element={<Shop />} />
+            <Route path="about" element={<About />} />
+            <Route path="checkout" element={<Checkout />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
         <h3 className={styles.logo}>Logo</h3>
         <button className={`${styles.btn} ${styles.shopping-cart-btn}`} onClick={() => setCartVisible(true)}>
           <GiShoppingBag size={24}/>
@@ -86,20 +97,6 @@ function App() {
 					))}
 				</div>
 			</main>
-      <div>
-      <p>Hello!</p>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="shop" element={<Shop />} />
-            <Route path="about" element={<About />} />
-            <Route path="checkout" element={<Checkout />} />
-            <Route path="*" element={<NoPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-      </div>
     </div>
   );
 }
