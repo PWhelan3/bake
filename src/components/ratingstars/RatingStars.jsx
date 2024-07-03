@@ -9,14 +9,9 @@ function RatingStars({ rating }) {
 	const starFilledWidth = (starIndex) => {
 		if (starIndex + 1 <= filledStars) {
 			return "100%";
-		} else if (
-			starIndex + 1 ===
-			partFilledStar
-		) {
+		} else if ( starIndex + 1 === partFilledStar) {
 			console.log();
-			return `${Math.floor(
-				(rating - filledStars) * 100
-			)}%`;
+			return `${Math.floor((rating - filledStars) * 100)}%`;
 		} else {
 			return "0%";
 		}
