@@ -24,19 +24,9 @@ function RatingStars({ rating }) {
 
 	return (
 		<div className={styles.rating}>
-			{Array(5)
-				.fill(0)
-				.map((star, index) => (
-					<div
-						className={styles.star}
-						key={index}>
-						<div
-							className={styles.starFull}
-							style={{
-								width: starFilledWidth(
-									index
-								),
-							}}>
+			{Array(5) .fill(0) .map((star, index) => (
+					<div className={styles.star} key={index}>
+						<div className={styles.starFull} style={{ width: starFilledWidth(index)}}>
 							<BsStarFill />
 						</div>
 						<div className={styles.starEmpty}>
