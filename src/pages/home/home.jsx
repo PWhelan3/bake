@@ -9,6 +9,7 @@ import { Special } from '.../components/special/Special';
 import { Cart } from '.../components/cart/Cart';
 import { Header } from '.../components/header/Header';
 import { Testimonials } from '.../components/testimonials/Testimonials';
+import { Shop } from '.../pages/shop/Shop';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Header />
       <Hero />
       <Featured />
+      <Shop />
       <Items />
       <Special />
       <Testimonials />
