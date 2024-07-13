@@ -2,7 +2,13 @@ import React from 'react'
 
 const Items = () => {
   return (
-    <div>Items</div>
+    <div>
+      <div>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+    </div>
   )
 }
 
