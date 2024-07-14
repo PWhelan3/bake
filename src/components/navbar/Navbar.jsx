@@ -4,7 +4,16 @@ import { AiFillShopping } from "react-icons/ai";
 
 const Navbar = () => {
   return (
-    <div>navbar</div>
+    <div>
+      <div>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
   )
 }
 
