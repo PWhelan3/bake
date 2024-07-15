@@ -2,7 +2,12 @@ import React from 'react'
 
 const Special = () => {
   return (
-    <div>Special</div>
+    <div>
+      <div>
+        <h3></h3>
+        <img></img>
+      </div>
+    </div>
   )
 }
 
